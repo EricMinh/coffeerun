@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head class="main-header">
   <meta charset="utf-8">
   <title>CoffeeRun Payment Form</title>
-  <link href="stylesheets/payment-form.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -18,20 +19,20 @@
         <ul>
           <li>
             <label for="title_1">
-              <input type="radio" id="title_1" name="title" value="Creator">
-              Creator
+              <input type="radio" id="title_1" name="title" value="Ace">
+              Ace
             </label>
           </li>
           <li>
             <label for="title_2">
-              <input type="radio" id="title_2" name="title" value="Inovator">
-              Inovator
+              <input type="radio" id="title_2" name="title" value="King">
+              King
             </label>
           </li>
           <li>
             <label for="title_3">
-              <input type="radio" id="title_3" name="title" value="Magician">
-              Magician
+              <input type="radio" id="title_3" name="title" value="Queen">
+              Queen
             </label>
           </li>
         </ul>
@@ -87,16 +88,19 @@
       </p>
     </section>
     <section>
-      <p> <button type="submit">Validate the payment</button> </p>
-
       <p> <a href="index.html"> <input type="button" value="Return to Order" /></a></p>
+      <p> <button type="submit" id="myBtn">Validate the payment</button></p>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modalText"></div>
+        </div>
+      </div>
     </section>
   </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   <script src="scripts/formhandler.js" charset="utf-8"></script>
-  <script src="scripts/mainPayment.js" charset="utf-8"></script>
-  <!-- jQuery Modal -->
-
+  <script src="scripts/main-payment.js" charset="utf-8"></script>
 </body>
 
 </html>
